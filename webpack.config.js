@@ -1,9 +1,9 @@
 const path = require('path');
-
+//var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	//入口文件的配置项
     entry:{
-    	entry: './src/index.js'
+    	entry: './src/view/index.js'
     },
     //出口文件的配置项
     output:{
@@ -28,7 +28,9 @@ module.exports = {
         ]
     },
     //插件，用于生产模版和各项功能
-    plugins:[],
+    plugins:[
+    	
+    ],
     //配置webpack开发服务功能
     devServer:{
     	contentBase: "./dist",
@@ -36,3 +38,4 @@ module.exports = {
 	    inline: true
     }
 };
+
